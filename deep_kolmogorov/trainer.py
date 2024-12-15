@@ -350,13 +350,13 @@ def stopper_factory(metrics, thresholds, modes):
 
 
 HYPERCONFIGS = {
-    "avg_bs_r": {
+    "avg_bs_basket": {
         "seed": tune.grid_search([0]),
         "checkpoint": True,
-        "pde": "BSr",
+        "pde": "BSbasket",
         "net": "DNN",
         "opt": "adamw",
-        "bs": 10000,
+        "bs": 120000,
         "lr": 0.01,
         "min_lr": 1e-8,
         "lr_decay": 0.25,
@@ -366,11 +366,11 @@ HYPERCONFIGS = {
         "unfreeze_patience": 1,
         "n_iterations": 30,
         "n_train_batches": 2000,
-        "n_test_batches": 1000,
-        "size_t_x_u": [0,1,4],
+        "n_test_batches": 1200,
+        "size_t_x_u": [0,10,23],
         "num_width" : tune.grid_search([35,55,75]),
         "num_depth" : tune.grid_search([5,7]),
-        "data_path": "/home/ycui/Documents/deepOnet_bermudan/data/free_test_num_ex_4_qmax_0.1_sensor_type_MP_num_sensor_200_var_rescale_2",
+        "data_path": "/home/ycui/Documents/deepOnet_bermudan/data_GeometricBasket/free_test_num_ex_2_qmax_0.1_num_sensor_100_as1D_10D",
     },
 }
 
