@@ -370,7 +370,7 @@ HYPERCONFIGS = {
         "size_t_x_u": [0,10,23],
         "num_width" : tune.grid_search([35,55,75]),
         "num_depth" : tune.grid_search([5,7]),
-        "data_path": "/home/ycui/Documents/deepOnet_bermudan/data_GeometricBasket/free_test_num_ex_2_qmax_0.1_num_sensor_100_as1D_10D",
+        "data_path": "/home/ycui/Documents/deepOnet_bermudan/data_GeometricBasket/free_test_num_ex_12_qmax_0.1_num_sensor_100_as1D_10D",
     },
 }
 
